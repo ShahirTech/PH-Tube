@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PH Tube</title>
+
+    <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon" />
+
+    <!-- DaisyUI + Tailwind CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Fontawesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/bbfc4be646.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css"
+    />
+
+    <!-- Vanila CSS -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+      .inter {
+        font-family: "Inter", sans-serif;
+      }
+
+      .active {
+        background-color: red;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body class="inter">
+    <header class="w-[85%] mx-auto">
+      <nav class="flex justify-between items-center py-5 gap-2 border-b-2">
+        <!-- <div class="tooltip tooltip-bottom" data-tip="Home">
+          <button
+            class="btn btn-ghost btn-circle bg-[#12132D] bg-opacity-10 lg:btn-lg btn-xs"
+          >
+            <i class="fa fa-home"></i>
+          </button>
+        </div> -->
+        <div class="w-28">
+          <img src="images/Logo.png" alt="" />
+        </div>
+        <div class="">
+          <label
+            class="input border-4 w-36 md:w-full lg:w-[576px] input-bordered rounded-3xl flex items-center gap-2 tooltip tooltip-bottom"
+            data-tip="Search"
+          >
+            <input type="text" class="grow" placeholder="Search" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              class="h-4 w-4 opacity-70"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </label>
+        </div>
+        <div class="">
+          <button class="btn">Sort</button>
+        </div>
+      </nav>
+      <nav
+        id="categories"
+        class="flex justify-center gap-5 items-center py-5"
+      ></nav>
+    </header>
+    <main class="">
+      <section
+        id="videos-container"
+        class="w-[85%] mx-auto mt-10 mb-24 grid justify-items-center md:grid-cols-2 lg:grid-cols-4 gap-5"
+      ></section>
+    </main>
+    <script src="js/videoscript..js"></script>
+  </body>
+</html>
